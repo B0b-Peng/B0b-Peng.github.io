@@ -1,0 +1,11 @@
+[2026-09-02] Step: Fetched Google Site (sites.google.com/view/bopengsrite) via proxy 127.0.0.1:7890. Outcome: success. Context: 4 pages saved to /tmp/page_*.html.
+[2026-09-02] Step: Extracted structure + text with BeautifulSoup. Outcome: success. Context: theme blue #226E93 / dark #212121 hero / Lato; 4 nav pages recovered.
+[2026-09-02] Step: git init in ~/DEVELOPER/bopeng-site/ (branch main). Outcome: success.
+[2026-09-02] Step: Wrote style.css, index.html, research.html, study-resources.html, the-beginning-of-story.html. Outcome: success.
+[2026-09-02] Step: HTML tag validation (custom parser). Outcome: success, no mismatches.
+[2026-09-02] Step: Installed gh 2.99.0; set remote origin git@github.com:B0b-Peng/B0b-Peng.github.io.git. Outcome: success. Context: SSH auth as B0b-Peng verified.
+[2026-09-02] Step: Local commit ddc9785. Outcome: success.
+[2026-09-02] Step: Create GitHub repo B0b-Peng.github.io. Outcome: pending (user creating manually).
+[2026-09-02] Step: User created repo B0b-Peng.github.io. Outcome: success.
+[2026-09-02] Step: git push -u origin main. Outcome: success.
+[2026-09-02] Step: GitHub Pages deploy verified (state=success); all pages return 200. Outcome: success. Context: https://b0b-peng.github.io

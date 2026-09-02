@@ -1,0 +1,70 @@
+{
+  "project": "bopeng-site",
+  "steps": [
+    {
+      "step": "Fetch Google Site pages via local proxy (127.0.0.1:7890)",
+      "outcome": "success",
+      "context": "URL https://sites.google.com/view/bopengsrite; pages: introduction, research, study-resources, the-beginning-of-story; saved to /tmp/page_*.html"
+    },
+    {
+      "step": "Extract text and structure from Google Site HTML",
+      "outcome": "success",
+      "context": "Used BeautifulSoup; recovered theme (blue #226E93, dark #212121 hero, Lato font), 4 nav pages, section headings, and verbatim text"
+    },
+    {
+      "step": "Create project directory and git init",
+      "outcome": "success",
+      "context": "~/DEVELOPER/bopeng-site/ ; branch main"
+    },
+    {
+      "step": "Build style.css reproducing theme",
+      "outcome": "success",
+      "context": "~/DEVELOPER/bopeng-site/style.css"
+    },
+    {
+      "step": "Build index.html (Introduction)",
+      "outcome": "success",
+      "context": "~/DEVELOPER/bopeng-site/index.html"
+    },
+    {
+      "step": "Build research.html",
+      "outcome": "success",
+      "context": "~/DEVELOPER/bopeng-site/research.html"
+    },
+    {
+      "step": "Build study-resources.html",
+      "outcome": "success",
+      "context": "~/DEVELOPER/bopeng-site/study-resources.html"
+    },
+    {
+      "step": "Build the-beginning-of-story.html",
+      "outcome": "success",
+      "context": "~/DEVELOPER/bopeng-site/the-beginning-of-story.html ; images referenced as assets/photo-left.jpg and assets/photo-right.jpg (user to provide)"
+    },
+    {
+      "step": "Validate HTML structure",
+      "outcome": "success",
+      "context": "All 4 HTML files parse with no tag mismatch"
+    },
+    {
+      "step": "Install gh CLI and configure git remote",
+      "outcome": "success",
+      "context": "gh 2.99.0 via homebrew; origin = git@github.com:B0b-Peng/B0b-Peng.github.io.git ; SSH auth to github.com verified as B0b-Peng"
+    },
+    {
+      "step": "Local commit",
+      "outcome": "success",
+      "context": "commit ddc9785 'Initial site: port Google Site content to static GitHub Pages'"
+    },
+    {
+      "step": "Create GitHub repo B0b-Peng.github.io",
+      "outcome": "success",
+      "context": "User created empty public repo; repo confirmed via API (full_name B0b-Peng/B0b-Peng.github.io, default branch main)"
+    },
+    {
+      "step": "Push site to GitHub and deploy Pages",
+      "outcome": "success",
+      "context": "git push -u origin main succeeded; Pages deployment state=success; live URLs return HTTP 200 (/, /research.html, /study-resources.html, /the-beginning-of-story.html, /style.css)"
+    }
+  ]
+}
